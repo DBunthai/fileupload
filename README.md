@@ -30,3 +30,8 @@ curl --location 'http://localhost:8080/api/v1/file/upload' \
 
 ```
 
+<br>
+
+#### Diagrams
+
+![img.png](img.png)
