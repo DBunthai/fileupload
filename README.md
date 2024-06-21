@@ -35,3 +35,16 @@ curl --location 'http://localhost:8080/api/v1/file/upload' \
 #### Diagrams
 
 ![img.png](img.png)
+
+<br>
+
+#### Overview
+
+Simple Upload File Architecture and Implementation with Spring Boot <br>
+
+- Spring Boot Rest Controller with Maltilpart to handle data stream from client-side
+- `Clamav` is used to scan file virus 
+- Generate UUID or filekey to attach with the file metadata (filesize, filename...)
+- Store file in the storage with filekey
+
+You can fetch from the storage with the filekey
