@@ -56,7 +56,7 @@ public class FileUploadCommandHandlerImpl implements FileUploadHandler {
         FileInfo newFileInfo = fileInfoRepository.save(fileInfo);
         UUID fileKey = newFileInfo.getId();
         saveFile(fileStream, fileKey);
-
+        fileStream.close();
 
         return FileInfoDTO.builder()
             .name(fileName)
